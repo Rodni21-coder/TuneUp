@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo | Accesorios para Vehículos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- TOP BAR -->
+  <header class="header">
+    <div class="container header__content">
+      <div class="brand">
+        <!-- CAMBIA logo.png por el nombre real de tu logo si es distinto -->
+        <img class="brand__logo" src="Logo.png Tuneup.jpeg" alt="Logo" />
+        <div class="brand__text">
+          <h1>Auto Accessories</h1>
+          <p>Luces, LED, accesorios y más</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn btn--primary" id="btnWhatsappTop" href="#">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__content">
+      <div class="hero__text">
+        <h2>Accesorios para tu vehículo</h2>
+        <p>
+          Catálogo rápido y directo. Toca un producto y te abre WhatsApp para cotizar al instante.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#catalogo">Ver catálogo</a>
+          <a class="btn btn--ghost" id="btnWhatsappHero" href="#">Cotizar por WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="hero__badge">
+        <div class="badge">
+          <span class="badge__dot"></span>
+          <span>Envíos / Entrega local</span>
+        </div>
+        <div class="badge">
+          <span class="badge__dot"></span>
+          <span>Instalación (opcional)</span>
+        </div>
+        <div class="badge">
+          <span class="badge__dot"></span>
+          <span>Productos nuevos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATALOGO -->
+  <main class="container main">
+    <section id="catalogo" class="section">
+      <div class="section__head">
+        <h3>Catálogo</h3>
+        <div class="search">
+          <input id="searchInput" type="text" placeholder="Buscar: luces, LED, faros, etc." />
+        </div>
+      </div>
+
+      <div id="productsGrid" class="grid"></div>
+      <p class="hint">Tip: Haz clic en cualquier producto para abrir WhatsApp con el mensaje listo.</p>
+    </section>
+
+    <!-- CONTACTO / REDES -->
+    <section id="contacto" class="section section--footer">
+      <div class="footer">
+        <div class="footer__col">
+          <h4>Contacto</h4>
+          <p><strong>Tel/WhatsApp:</strong> <span id="phoneText">+507 6000-0000</span></p>
+          <p><strong>Correo:</strong> <a id="emailLink" href="mailto:correo@tudominio.com">correo@tudominio.com</a></p>
+          <p><strong>Ubicación:</strong> Ciudad de Panamá</p>
+          <a class="btn btn--primary" id="btnWhatsappFooter" href="#">Escríbenos por WhatsApp</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Redes Sociales</h4>
+          <div class="social">
+            <a id="igLink" href="#" target="_blank" rel="noopener">Instagram</a>
+            <a id="fbLink" href="#" target="_blank" rel="noopener">Facebook</a>
+            <a id="ttLink" href="#" target="_blank" rel="noopener">TikTok</a>
+          </div>
+          <p class="small">
+            © <span id="year"></span> Auto Accessories. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
